@@ -33,5 +33,5 @@ class Pinyin():
 
 if __name__ == '__main__':
     pinyintest = Pinyin()
-    result = pinyintest.get_pinyin("测试2a论2台a.")
+    result = pinyintest.get_pinyin("测试2a论2台a.！")
     print(result)

@@ -1,17 +1,14 @@
 ³õÊ¼»¯ÅäÖÃ
-C´úÂë  ÊÕ²Ø´úÂë
+
 #ÅäÖÃÊ¹ÓÃgit²Ö¿âµÄÈËÔ±ĞÕÃû  
 git config --global user.name "Your Name Comes Here"  
-  
-#ÅäÖÃÊ¹ÓÃgit²Ö¿âµÄÈËÔ±email  
 git config --global user.email you@yourdomain.example.com  
-  
+
 #ÅäÖÃµ½»º´æ Ä¬ÈÏ15·ÖÖÓ  
 git config --global credential.helper cache   
-  
+
 #ĞŞ¸Ä»º´æÊ±¼ä  
-git config --global credential.helper 'cache --timeout=3600'    
-  
+git config --global credential.helper 'cache --timeout=3600'  
 git config --global color.ui true  
 git config --global alias.co checkout  
 git config --global alias.ci commit  
@@ -19,39 +16,31 @@ git config --global alias.st status
 git config --global alias.br branch  
 git config --global core.editor "mate -w"    # ÉèÖÃEditorÊ¹ÓÃtextmate  
 git config -1 #ÁĞ¾ÙËùÓĞÅäÖÃ  
-  
+
 #ÓÃ»§µÄgitÅäÖÃÎÄ¼ş~/.gitconfig  
   
 ²é¿´¡¢Ìí¼Ó¡¢Ìá½»¡¢É¾³ı¡¢ÕÒ»Ø£¬ÖØÖÃĞŞ¸ÄÎÄ¼ş
-C´úÂë  ÊÕ²Ø´úÂë
 git help <command>  # ÏÔÊ¾commandµÄhelp  
 git show            # ÏÔÊ¾Ä³´ÎÌá½»µÄÄÚÈİ  
 git show $id  
-   
 git co  -- <file>   # Å×Æú¹¤×÷ÇøĞŞ¸Ä  
 git co  .           # Å×Æú¹¤×÷ÇøĞŞ¸Ä  
-   
 git add <file>      # ½«¹¤×÷ÎÄ¼şĞŞ¸ÄÌá½»µ½±¾µØÔİ´æÇø  
 git add .           # ½«ËùÓĞĞŞ¸Ä¹ıµÄ¹¤×÷ÎÄ¼şÌá½»Ôİ´æÇø  
-   
 git rm <file>       # ´Ó°æ±¾¿âÖĞÉ¾³ıÎÄ¼ş  
 git rm <file> --cached  # ´Ó°æ±¾¿âÖĞÉ¾³ıÎÄ¼ş£¬µ«²»É¾³ıÎÄ¼ş  
-   
 git reset <file>    # ´ÓÔİ´æÇø»Ö¸´µ½¹¤×÷ÎÄ¼ş  
 git reset -- .      # ´ÓÔİ´æÇø»Ö¸´µ½¹¤×÷ÎÄ¼ş  
 git reset --hard    # »Ö¸´×î½üÒ»´ÎÌá½»¹ıµÄ×´Ì¬£¬¼´·ÅÆúÉÏ´ÎÌá½»ºóµÄËùÓĞ±¾´ÎĞŞ¸Ä  
-   
 git ci <file>  
 git ci .  
 git ci -a           # ½«git add, git rmºÍgit ciµÈ²Ù×÷¶¼ºÏ²¢ÔÚÒ»Æğ×ö  
 git ci -am "some comments"  
 git ci --amend      # ĞŞ¸Ä×îºóÒ»´ÎÌá½»¼ÇÂ¼  
-   
 git revert <$id>    # »Ö¸´Ä³´ÎÌá½»µÄ×´Ì¬£¬»Ö¸´¶¯×÷±¾ÉíÒ²´´½¨ÁËÒ»´ÎÌá½»¶ÔÏó  
 git revert HEAD     # »Ö¸´×îºóÒ»´ÎÌá½»µÄ×´Ì¬  
  
 ²é¿´ÎÄ¼şdiff
-C´úÂë  ÊÕ²Ø´úÂë
 git diff <file>     # ±È½Ïµ±Ç°ÎÄ¼şºÍÔİ´æÇøÎÄ¼ş²îÒì  
 git diff  
 git diff <$id1> <$id2>   # ±È½ÏÁ½´ÎÌá½»Ö®¼äµÄ²îÒì  
@@ -61,18 +50,16 @@ git diff --cached   # ±È½ÏÔİ´æÇøºÍ°æ±¾¿â²îÒì
 git diff --stat     # ½ö½ö±È½ÏÍ³¼ÆĞÅÏ¢  
   
 ²é¿´Ìá½»¼ÇÂ¼
-C´úÂë  ÊÕ²Ø´úÂë
 git log  
 git log <file>      # ²é¿´¸ÃÎÄ¼şÃ¿´ÎÌá½»¼ÇÂ¼  
 git log -p <file>   # ²é¿´Ã¿´ÎÏêÏ¸ĞŞ¸ÄÄÚÈİµÄdiff  
 git log -p -2       # ²é¿´×î½üÁ½´ÎÏêÏ¸ĞŞ¸ÄÄÚÈİµÄdiff  
 git log --stat      #²é¿´Ìá½»Í³¼ÆĞÅÏ¢  
  
- tig
+tig
 MacÉÏ¿ÉÒÔÊ¹ÓÃtig´úÌædiffºÍlog£¬brew install tig
  
 È¡µÃGit²Ö¿â
-C´úÂë  ÊÕ²Ø´úÂë
 #³õÊ¼»¯Ò»¸ö°æ±¾²Ö¿â  
 git init  
   
@@ -81,24 +68,23 @@ git clone git@xbc.me:wordpress.git
   
 #Ìí¼ÓÔ¶³Ì°æ±¾¿âorigin£¬Óï·¨Îª git remote add [shortname] [url]  
 git remote add origin git@xbc.me:wordpress.git  
-  
+
 #²é¿´Ô¶³Ì²Ö¿â  
 git remote -v  
- 
+
 Ìá½»ÄãµÄĞŞ¸Ä
-C´úÂë  ÊÕ²Ø´úÂë
 #Ìí¼Óµ±Ç°ĞŞ¸ÄµÄÎÄ¼şµ½Ôİ´æÇø  
 git add .  
-  
+
 #Èç¹ûÄã×Ô¶¯×·×ÙÎÄ¼ş£¬°üÀ¨ÄãÒÑ¾­ÊÖ¶¯É¾³ıµÄ£¬×´Ì¬ÎªDeletedµÄÎÄ¼ş  
 git add -u  
   
 #Ìá½»ÄãµÄĞŞ¸Ä  
 git commit ¨Cm "ÄãµÄ×¢ÊÍ"  
-  
+
 #ÍÆËÍÄãµÄ¸üĞÂµ½Ô¶³Ì·şÎñÆ÷,Óï·¨Îª git push [Ô¶³ÌÃû] [±¾µØ·ÖÖ§]:[Ô¶³Ì·ÖÖ§]  
 git push origin master  
-  
+
 #²é¿´ÎÄ¼ş×´Ì¬  
 git status  
   
@@ -134,17 +120,16 @@ git reset HEAD b
 git checkout ¨C- readme.txt  
  
 ²é¿´¡¢ÇĞ»»¡¢´´½¨ºÍÉ¾³ı·ÖÖ§
-C´úÂë  ÊÕ²Ø´úÂë
 git br -r           # ²é¿´Ô¶³Ì·ÖÖ§  
 git br <new_branch> # ´´½¨ĞÂµÄ·ÖÖ§  
 git br -v           # ²é¿´¸÷¸ö·ÖÖ§×îºóÌá½»ĞÅÏ¢  
 git br --merged     # ²é¿´ÒÑ¾­±»ºÏ²¢µ½µ±Ç°·ÖÖ§µÄ·ÖÖ§  
 git br --no-merged  # ²é¿´ÉĞÎ´±»ºÏ²¢µ½µ±Ç°·ÖÖ§µÄ·ÖÖ§  
-   
+
 git co <branch>     # ÇĞ»»µ½Ä³¸ö·ÖÖ§  
 git co -b <new_branch> # ´´½¨ĞÂµÄ·ÖÖ§£¬²¢ÇÒÇĞ»»¹ıÈ¥  
 git co -b <new_branch> <branch>  # »ùÓÚbranch´´½¨ĞÂµÄnew_branch  
-   
+
 git co $id          # °ÑÄ³´ÎÀúÊ·Ìá½»¼ÇÂ¼checkout³öÀ´£¬µ«ÎŞ·ÖÖ§ĞÅÏ¢£¬ÇĞ»»µ½ÆäËû·ÖÖ§»á×Ô¶¯É¾³ı  
 git co $id -b <new_branch>  # °ÑÄ³´ÎÀúÊ·Ìá½»¼ÇÂ¼checkout³öÀ´£¬´´½¨³ÉÒ»¸ö·ÖÖ§  
    
@@ -152,7 +137,6 @@ git br -d <branch>  # É¾³ıÄ³¸ö·ÖÖ§
 git br -D <branch>  # Ç¿ÖÆÉ¾³ıÄ³¸ö·ÖÖ§ (Î´±»ºÏ²¢µÄ·ÖÖ§±»É¾³ıµÄÊ±ºòĞèÒªÇ¿ÖÆ)  
  
 ·ÖÖ§ºÏ²¢ºÍrebase
-C´úÂë  ÊÕ²Ø´úÂë
 git merge <branch>               # ½«branch·ÖÖ§ºÏ²¢µ½µ±Ç°·ÖÖ§  
 git merge origin/master --no-ff  # ²»ÒªFast-FowardºÏ²¢£¬ÕâÑù¿ÉÒÔÉú³ÉmergeÌá½»  
    
@@ -160,20 +144,17 @@ git rebase master <branch>       # ½«master rebaseµ½branch£¬Ïàµ±ÓÚ£º
 git co <branch> && git rebase master && git co master && git merge <branch>  
  
 Git²¹¶¡¹ÜÀí(·½±ãÔÚ¶àÌ¨»úÆ÷ÉÏ¿ª·¢Í¬²½Ê±ÓÃ)
-C´úÂë  ÊÕ²Ø´úÂë
 git diff > ../sync.patch         # Éú³É²¹¶¡  
 git apply ../sync.patch          # ´ò²¹¶¡  
 git apply --check ../sync.patch  #²âÊÔ²¹¶¡ÄÜ·ñ³É¹¦  
  
 GitÔİ´æ¹ÜÀí
-C´úÂë  ÊÕ²Ø´úÂë
 git stash                        # Ôİ´æ  
 git stash list                   # ÁĞËùÓĞstash  
 git stash apply                  # »Ö¸´Ôİ´æµÄÄÚÈİ  
 git stash drop                   # É¾³ıÔİ´æÇø  
  
 GitÔ¶³Ì·ÖÖ§¹ÜÀí
-C´úÂë  ÊÕ²Ø´úÂë
 git pull                         # ×¥È¡Ô¶³Ì²Ö¿âËùÓĞ·ÖÖ§¸üĞÂ²¢ºÏ²¢µ½±¾µØ  
 git pull --no-ff                 # ×¥È¡Ô¶³Ì²Ö¿âËùÓĞ·ÖÖ§¸üĞÂ²¢ºÏ²¢µ½±¾µØ£¬²»Òª¿ì½øºÏ²¢  
 git fetch origin                 # ×¥È¡Ô¶³Ì²Ö¿â¸üĞÂ  
@@ -189,7 +170,6 @@ git push origin <local_branch>:<remote_branch>  # ´´½¨Ô¶³Ì·ÖÖ§
 git push origin :<remote_branch>  #ÏÈÉ¾³ı±¾µØ·ÖÖ§(git br -d <branch>)£¬È»ºóÔÙpushÉ¾³ıÔ¶³Ì·ÖÖ§  
  
 »ù±¾µÄ·ÖÖ§¹ÜÀí
-C´úÂë  ÊÕ²Ø´úÂë
 #´´½¨Ò»¸ö·ÖÖ§  
 git branch iss53  
   
@@ -218,7 +198,6 @@ git remote show origin
 git checkout ¨Cb dev origin/develop  
  
 GitÔ¶³Ì²Ö¿â¹ÜÀí
-C´úÂë  ÊÕ²Ø´úÂë
 git remote -v                    # ²é¿´Ô¶³Ì·şÎñÆ÷µØÖ·ºÍ²Ö¿âÃû³Æ  
 git remote show origin           # ²é¿´Ô¶³Ì·şÎñÆ÷²Ö¿â×´Ì¬  
 git remote add origin git@ github:robbin/robbin_site.git         # Ìí¼ÓÔ¶³Ì²Ö¿âµØÖ·  
@@ -226,7 +205,6 @@ git remote set-url origin git@ github.com:robbin/robbin_site.git # ÉèÖÃÔ¶³Ì²Ö¿âµ
 git remote rm <repository>       # É¾³ıÔ¶³Ì²Ö¿â  
  
 ´´½¨Ô¶³Ì²Ö¿â
-C´úÂë  ÊÕ²Ø´úÂë
 git clone --bare robbin_site robbin_site.git  # ÓÃ´ø°æ±¾µÄÏîÄ¿´´½¨´¿°æ±¾²Ö¿â  
 scp -r my_project.git git@ git.csdn.net:~      # ½«´¿²Ö¿âÉÏ´«µ½·şÎñÆ÷ÉÏ  
    
@@ -238,6 +216,5 @@ git push -u origin develop  # Ê×´Î½«±¾µØdevelop·ÖÖ§Ìá½»µ½Ô¶³Ìdevelop·ÖÖ§£¬²¢ÇÒtr
 git remote set-head origin master   # ÉèÖÃÔ¶³Ì²Ö¿âµÄHEADÖ¸Ïòmaster·ÖÖ§  
  
 Ò²¿ÉÒÔÃüÁîÉèÖÃ¸ú×ÙÔ¶³Ì¿âºÍ±¾µØ¿â
-C´úÂë  ÊÕ²Ø´úÂë
 git branch --set-upstream master origin/master  
 git branch --set-upstream develop origin/develop 

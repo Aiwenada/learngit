@@ -25,7 +25,7 @@ class Pinyin():
         except Exception as e:
             log.e(e)
         return self.splitter.join(result)
-    def get_initials(self, char=u'你'):
+    def get_initials(self, char=u'你好'):
         try:
             return self.dict["%X" % ord(char)].split(" ")[0][0]
         except:
@@ -33,5 +33,5 @@ class Pinyin():
 
 if __name__ == '__main__':
     pinyintest = Pinyin()
-    result = pinyintest.get_pinyin("2a论2台a.")
+    result = pinyintest.get_pinyin("测试2a论2台a.")
     print(result)

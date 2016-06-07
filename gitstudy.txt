@@ -24,7 +24,7 @@ github.com操作
 3、[git checkout branch][git checkout master],是操作最后的一个文件
 4、合并当前操作的文件 branch到master [git merge dev]
   {遇到冲突，先解决冲突。[git status]->[git log --graph --pretty=oneline --abbrev-commit]}
-  {重新add、commit}
+  {master上 重新add、commit}
 5、删除分支[git branch -d xxx]
 
 

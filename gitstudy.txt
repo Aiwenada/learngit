@@ -18,4 +18,11 @@ git基本命令
 github.com操作
 1、fork获取开源代码到自己的github
 
+分支操作
+1、创建并切换分支[git checkout -b dev]==[git branch dev]+[git checkout dev]
+2、查看当前分支 [git branch]
+3、
+
+
+
 

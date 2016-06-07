@@ -30,6 +30,11 @@
 7、抓取远程[git pull]
 8、获取远程仓库的详细信息[git remote -v]
 
+[git]标签操作
+1、获取标签[git tag]
+2、创建标签[git tag {tag-name} {commitID}] 默认打在最后一次commit
+3、查看标签[git show {tag-name}]
+
 github.com操作
 1、fork获取开源代码到自己的github
 

@@ -8,6 +8,7 @@ git基本命令
 7、文件回退[git reset --hard HEAD^ xxx.file]
 8、文件获取[git checkout -- xxx.file]
 9、文件删除[git rm xxx.file][git commit -m"delect file"]
+10、文件查看 [vi ***.file],退出文件[:q]
 
 远程库的操作
 1、创建KEY[ssh-keygen -t rsa -C"123@126.com"]
@@ -22,10 +23,11 @@ github.com操作
 1、创建并切换分支[git checkout -b dev]==[git branch dev]+[git checkout dev]{切换分支}
 2、查看当前分支 [git branch]
 3、[git checkout branch][git checkout master],是操作最后的一个文件
-4、合并当前操作的文件 branch到master [git merge dev]
+4、合并当前操作的文件 branch到master [git merge ***branch][git merge --no-ff -m "comment" **branch]
   {遇到冲突，先解决冲突。[git status]->[git log --graph --pretty=oneline --abbrev-commit]}
   {master上 重新add、commit}
 5、删除分支[git branch -d xxx]
+6、暂存工作环境 [git stash] 还原工作环境[git stash list]->[git stash pop],或者指定还原[git stash apply stash@{0}]->[git stash drop]
 
 
 

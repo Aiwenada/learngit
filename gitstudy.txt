@@ -23,7 +23,7 @@ github.com操作
 2、查看当前分支 [git branch]
 3、[git checkout branch][git checkout master],是操作最后的一个文件
 4、合并分支到master [git merge dev]
-5、删除分支[git branch dev]
+5、删除分支[git branch -d dev]
 
 
 

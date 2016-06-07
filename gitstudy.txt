@@ -11,20 +11,24 @@
 10、文件查看 [vi ***.file],退出文件[:q]
 
 [git]分支操作
-1、创建并切换分支[git checkout -b dev]==[git branch dev]+[git checkout dev]{切换分支}
-2、查看当前分支 [git branch]
-3、[git checkout branch][git checkout master],是操作最后的一个文件
-4、合并当前操作的文件 branch到master [git merge ***branch][git merge --no-ff -m "comment" **branch]
+1、创建并切换分支[git checkout -b branch-name]==[git branch branch-name]+[git checkout branch-name]{切换分支}
+2、查看当前有哪些分支 [git branch]
+3、[git checkout branch-name][git checkout master],是操作最后的一个文件
+4、合并当前操作的文件 branch到master [git merge branch-name][git merge --no-ff -m "comment" branch-name]
    {遇到冲突，先解决冲突。[git status]->[git log --graph --pretty=oneline --abbrev-commit]}
    {master上 重新add、commit}
-5、删除分支[git branch -d xxx] 强行删除分支[git branch -D xxx]
+5、删除分支[git branch -d branch-name] 强行删除分支[git branch -D branch-name]
 6、暂存工作环境 [git stash] 还原工作环境[git stash list]->[git stash pop],或者指定还原[git stash apply stash@{0}]->[git stash drop]
 
 [git]远程库的操作
 1、创建KEY[ssh-keygen -t rsa -C"123@126.com"]
 2、创建并关联[git remote add origin git@github.com:Aiwenada/***.git]
-3、远程推送[git push -u origin master],后续[git push origin master]
+3、远程推送[git push -u origin master{branch-name}],后续可用[git push origin master{branch-name}]
 4、远程克隆[git clone git@github.com:Aiwenada/***.git]
+5、获取远程库分支[git checkout -b branch-name origin/branch-name]
+6、本地分支与远程分支关联[git branch --set-upstream branch-name origin/brach-name]
+7、抓取远程[git pull]
+8、获取远程仓库的详细信息[git remote -v]
 
 github.com操作
 1、fork获取开源代码到自己的github

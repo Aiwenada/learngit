@@ -19,9 +19,14 @@ github.com操作
 1、fork获取开源代码到自己的github
 
 分支操作
-1、创建并切换分支[git checkout -b dev]==[git branch dev]+[git checkout dev]
+1、创建并切换分支[git checkout -b dev]==[git branch dev]+[git checkout dev]{切换分支}
 2、查看当前分支 [git branch]
-3、
+3、[git checkout branch][git checkout master],是操作最后的一个文件
+4、合并分支到master [git merge dev]
+5、删除分支[git branch dev]
+
+
+
 
 
 

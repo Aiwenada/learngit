@@ -1,4 +1,4 @@
-git基本命令
+[git]基本命令
 1、windows下载git工具[https://git-for-windows.github.io]
 2、配置GIT用户名[git config --global user.name "ada"][git config --global user.email "123@126.com"]
 3、创建目录[makdir leargit][cd][cd ..][pwd]
@@ -10,7 +10,17 @@ git基本命令
 9、文件删除[git rm xxx.file][git commit -m"delect file"]
 10、文件查看 [vi ***.file],退出文件[:q]
 
-远程库的操作
+[git]分支操作
+1、创建并切换分支[git checkout -b dev]==[git branch dev]+[git checkout dev]{切换分支}
+2、查看当前分支 [git branch]
+3、[git checkout branch][git checkout master],是操作最后的一个文件
+4、合并当前操作的文件 branch到master [git merge ***branch][git merge --no-ff -m "comment" **branch]
+   {遇到冲突，先解决冲突。[git status]->[git log --graph --pretty=oneline --abbrev-commit]}
+   {master上 重新add、commit}
+5、删除分支[git branch -d xxx] 强行删除分支[git branch -D xxx]
+6、暂存工作环境 [git stash] 还原工作环境[git stash list]->[git stash pop],或者指定还原[git stash apply stash@{0}]->[git stash drop]
+
+[git]远程库的操作
 1、创建KEY[ssh-keygen -t rsa -C"123@126.com"]
 2、创建并关联[git remote add origin git@github.com:Aiwenada/***.git]
 3、远程推送[git push -u origin master],后续[git push origin master]
@@ -18,17 +28,6 @@ git基本命令
 
 github.com操作
 1、fork获取开源代码到自己的github
-
-分支操作
-1、创建并切换分支[git checkout -b dev]==[git branch dev]+[git checkout dev]{切换分支}
-2、查看当前分支 [git branch]
-3、[git checkout branch][git checkout master],是操作最后的一个文件
-4、合并当前操作的文件 branch到master [git merge ***branch][git merge --no-ff -m "comment" **branch]
-  {遇到冲突，先解决冲突。[git status]->[git log --graph --pretty=oneline --abbrev-commit]}
-  {master上 重新add、commit}
-5、删除分支[git branch -d xxx]
-6、暂存工作环境 [git stash] 还原工作环境[git stash list]->[git stash pop],或者指定还原[git stash apply stash@{0}]->[git stash drop]
-
 
 
 

@@ -1,0 +1,21 @@
+git基本命令
+1、windows下载git工具[https://git-for-windows.github.io]
+2、配置GIT用户名[git config --global user.name "ada"][git config --global user.email "123@126.com"]
+3、创建目录[makdir leargit][cd][cd ..][pwd]
+4、创建并初始化git库,进入目录后再执行[git init]
+5、添加[git add xxx.file] 上传[git commit -m “描述说明”]
+6、文件操作[git status][git diff xxx.file][git log --pretty=oneline][git reflog]
+7、文件回退[git reset --hard HEAD^ xxx.file]
+8、文件获取[git checkout -- xxx.file]
+9、文件删除[git rm xxx.file][git commit -m"delect file"]
+
+远程库的操作
+1、创建KEY[ssh-keygen -t rsa -C"123@126.com"]
+2、创建并关联[git remote add origin git@github.com:Aiwenada/***.git]
+3、远程推送[git push -u origin master],后续[git push origin master]
+4、远程克隆[git clone git@github.com:Aiwenada/***.git]
+
+github.com操作
+1、fork获取开源代码到自己的github
+
+
